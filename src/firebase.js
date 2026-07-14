@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAudB0J6VIVMLEnMdl7dLaENSlGHB1ULfY",
+  apiKey: "AIzaSyAudB0J6VIVMlEnMdI7dLaENSlGHB1ULfY",
   authDomain: "fortunate-hub.firebaseapp.com",
   projectId: "fortunate-hub",
   storageBucket: "fortunate-hub.firebasestorage.app",
