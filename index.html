@@ -4,6 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FUTA & Church Hub</title>
+    <script>
+      window.addEventListener("error", function (e) {
+        document.body.innerHTML =
+          '<pre style="color:red;background:#111;padding:16px;white-space:pre-wrap;font-size:14px;">' +
+          "ERROR: " + (e.message || "") + "\n" +
+          "FILE: " + (e.filename || "") + "\n" +
+          "LINE: " + (e.lineno || "") + "\n" +
+          "STACK: " + (e.error && e.error.stack ? e.error.stack : "") +
+          "</pre>";
+      });
+      window.addEventListener("unhandledrejection", function (e) {
+        document.body.innerHTML =
+          '<pre style="color:orange;background:#111;padding:16px;white-space:pre-wrap;font-size:14px;">' +
+          "UNHANDLED PROMISE REJECTION: " + (e.reason && e.reason.message ? e.reason.message : e.reason) +
+          "</pre>";
+      });
+    </script>
   </head>
   <body>
     <div id="root"></div>
